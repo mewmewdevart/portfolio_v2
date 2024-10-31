@@ -1,0 +1,35 @@
+.navbar {
+    @apply flex justify-between mx-4 py-4 md:mx-20 lg:mx-40;
+}
+
+.navbar__logo {
+    @apply flex items-center gap-2;
+}
+
+.navbar__list {
+    @apply flex items-center gap-2;
+}
+
+.navbar__item {
+    @apply p-2 cursor-pointer transition-colors;
+}
+
+.navbar__item:hover {
+    @apply bg-brandPrimary text-brandBackground;
+}
+
+.navbar__link {
+    @apply flex items-center;
+}
+
+.navbar__linkIcon {
+    @apply pr-1 text-brandPrimary;
+}
+
+.navbar__item:hover .navbar__linkIcon {
+    @apply text-brandHighlight;
+}
+
+.navbar__custom {
+    @apply border-2 border-brandPrimary p-[6px] hover:bg-brandPrimary hover:text-brandBackground cursor-pointer;
+}
