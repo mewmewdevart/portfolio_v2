@@ -9,6 +9,8 @@ import LinkedinIcon from '../../assets/images/icons/icon_linkedin.svg';
 import GithubIcon from '../../assets/images/icons/icon_github.svg';
 import BehanceIcon from '../../assets/images/icons/icon_behance.svg';
 import FiverrIcon from '../../assets/images/icons/icon_fiverr.svg';
+import NavbarMobileComponent from '../organisms/navbar-mobile/NavbarMobileComponent';
+import useScreenSize from '../utils/useScreenSize';
 
 const navItems = [
 	{ label: 'Inicio', link: '#inicio' },
@@ -25,11 +27,19 @@ const socialsItem = [
   ];
 
 const Layout: React.FC = () => {
+	const isSmallScreen = useScreenSize();
 
 	return (
 		<>
-			 <NavbarComponent navItems={navItems} />
-			 <SocialsBarComponent socialsItem={socialsItem} />
+            {isSmallScreen ? (
+                <NavbarMobileComponent navItems={navItems} />
+            ) : (
+                <>
+                    <NavbarComponent navItems={navItems} />
+                    <SocialsBarComponent socialsItem={socialsItem} />
+                </>
+            )}
+			 
 				<Outlet />
 			{/* <FooterComponent /> */}
 		</>
