@@ -1,5 +1,5 @@
 import { BrowserRouter as Router } from 'react-router-dom';
-import PortfolioRouter from './routers/portfolio-routers';
+import PortfolioRouter from '@routers/portfolio-routers';
 
 function App() {
   return (
