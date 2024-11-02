@@ -1,5 +1,5 @@
 .navbar {
-    @apply flex justify-between mx-4 py-4 md:mx-20 lg:mx-40;
+    @apply flex justify-between px-4 py-4 md:px-20 lg:px-40 bg-brandBackground;
 }
 
 .navbar__logo {
@@ -31,5 +31,38 @@
 }
 
 .navbar__custom {
-    @apply border-2 border-brandPrimary p-[6px] hover:bg-brandPrimary hover:text-brandBackground cursor-pointer;
+    transition: all 0.3s ease;
+    @apply cursor-pointer overflow-hidden relative border-2 border-brandPrimary p-[6px] hover:bg-brandPrimary hover:text-brandBackground cursor-pointer;
+}
+
+
+.navbar__custom:hover {
+    text-decoration: none;
+    opacity: .7;
+}
+
+.navbar__custom:active {
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2),
+                inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+                inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+.navbar__custom::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    animation: shiny-anim 5s ease-in-out infinite;
+    @apply bg-brandGrayLight;
+}
+
+@keyframes shiny-anim {
+    0% { transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { transform: scale(0) rotate(45deg); opacity: 0.5; }
+    81% { transform: scale(4) rotate(45deg); opacity: 1; }
+    100% { transform: scale(50) rotate(45deg); opacity: 0; }
 }

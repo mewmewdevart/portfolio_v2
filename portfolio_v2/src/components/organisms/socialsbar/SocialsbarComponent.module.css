@@ -1,0 +1,12 @@
+.footer__lineSocials {
+    @apply fixed bottom-0 left-0 ml-20 flex items-center flex-col;
+}
+
+.footer_content {
+    transition: transform 0.3s ease-in-out;
+    @apply mb-2 w-8 h-8;
+}
+
+.footer_content:hover {
+    transform: scale(1.3);
+}

@@ -30,7 +30,7 @@ const NavbarMobileComponent: React.FC<NavbarMobileComponentProps> = ({ navItems 
   return (
     <header className="header" role="banner">
       <a className="logo" href='#'>
-        <img src={logo} alt="Logo MewmewDev" className='w-10 h-10' />
+        <img src={logo} alt="Logo MewmewDev" className='w-8 h-8' />
         MewmewDev
       </a>
       <nav ref={navRef} id="nav" className={`nav ${isMenuOpen ? 'nav--open' : ''}`} role="navigation">
@@ -59,6 +59,7 @@ const NavbarMobileComponent: React.FC<NavbarMobileComponentProps> = ({ navItems 
               </a>
             </li>
           ))}
+          <li className="nav__item navbar__custom">Currículo</li>
         </ul>
         <div className="splash"></div>
       </nav>

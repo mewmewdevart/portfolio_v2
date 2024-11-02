@@ -10,7 +10,7 @@ const NavbarComponent: React.FC<NavbarComponentProps> = ({ navItems }) => {
   return (
     <nav className={style.navbar}>
       <a className={style.navbar__logo} href='#'>
-        <img src={logo} alt="Logo MewmewDev" className='w-10 h-10' />
+        <img src={logo} alt="Logo MewmewDev" className='w-8 h-8' />
         MewmewDev
       </a>
       <ul className={style.navbar__list}>
@@ -22,7 +22,7 @@ const NavbarComponent: React.FC<NavbarComponentProps> = ({ navItems }) => {
             </a>
           </li>
         ))}
-        <li className={style.navbar__custom}>Curriculo</li>
+        <li className={style.navbar__custom}>Currículo</li>
       </ul>
 
     </nav>

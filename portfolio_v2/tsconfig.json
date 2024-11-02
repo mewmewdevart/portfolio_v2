@@ -27,7 +27,6 @@
       "@routers/*": ["./src/routers/*"],
       "@pages/*": ["./src/pages/*"],
       "@components/*": ["./src/components/*"],
-      "@organisms/*": ["./src/components/organisms/*"],
       "@config": ["./src/config.ts"],
       "@utils/*": ["./src/components/utils/*"],
       "@wdyr": ["./src/wdyr.ts"],

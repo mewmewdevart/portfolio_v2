@@ -1,7 +1,7 @@
 function HomePage() {
     return (
         <>
-          <h1>ola</h1>
+          <h1 className="bg-red-500 h-20 w-20 text-white">ola</h1>
         </>
   );
 }
