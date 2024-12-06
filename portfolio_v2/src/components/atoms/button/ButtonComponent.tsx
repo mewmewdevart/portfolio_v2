@@ -2,12 +2,13 @@ import React from 'react';
 import style from './ButtonComponent.module.css';
 
 interface ButtonComponentProps {
-  txtBtn: string;
+  children: React.ReactNode;
+  className?: string; 
 }
 
-const ButtonComponent: React.FC<ButtonComponentProps> = ({ txtBtn }) => {
+const ButtonComponent: React.FC<ButtonComponentProps> = ({ children, className}) => {
   return (
-    <button className={style.btn_custom}>{ txtBtn }</button>
+    <button className={`${style.btn_custom} ${className}`}>{ children }</button>
   );
 };
 
