@@ -35,8 +35,8 @@ const Layout: React.FC = () => {
                 <NavbarMobileComponent navItems={navItems} />
             ) : (
                 <>
-                    <NavbarComponent navItems={navItems} />
-                    <SocialsBarComponent socialsItem={socialsItem} />
+                	<NavbarComponent navItems={navItems} />
+                	{!isSmallScreen && <SocialsBarComponent socialsItem={socialsItem} />}
                 </>
             )}
 			 
