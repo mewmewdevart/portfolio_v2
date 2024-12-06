@@ -1,6 +1,6 @@
 .btn_custom {
     transition: all 0.3s ease;
-    @apply cursor-pointer overflow-hidden relative border-2 border-brandPrimary p-[6px] hover:bg-brandPrimary hover:text-brandBackground cursor-pointer;
+    @apply cursor-pointer overflow-hidden relative border-2 border-brandPrimary p-[6px] hover:bg-brandPrimary hover:text-brandBackground cursor-pointer bg-brandBackground;
 }
 
 .btn_custom:hover {
