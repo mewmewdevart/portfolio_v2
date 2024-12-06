@@ -10,3 +10,9 @@
 .footer_content:hover {
     transform: scale(1.3);
 }
+
+@media (max-width: 1024px) { 
+    .footer__lineSocials {
+        @apply hidden;
+    }
+ }
