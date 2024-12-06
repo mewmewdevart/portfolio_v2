@@ -60,6 +60,18 @@
     @apply bg-brandGrayLight;
 }
 
+.navbar__dropdown {
+    @apply absolute bg-brandBackground px-2 py-2 -ml-4 mt-2;
+}
+
+.navbar__dropdownItem {
+    @apply block px-2 py-2 text-brandGrayLight hover:bg-brandPrimary hover:text-brandBackground;
+}
+
+.navbar__item:hover .navbar__dropdown {
+    @apply block ;
+}
+
 @keyframes shiny-anim {
     0% { transform: scale(0) rotate(45deg); opacity: 0; }
     80% { transform: scale(0) rotate(45deg); opacity: 0.5; }
