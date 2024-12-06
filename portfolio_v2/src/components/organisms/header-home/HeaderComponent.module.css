@@ -1,0 +1,14 @@
+.header {
+    @apply flex justify-between items-center px-4 h-[580px] md:px-20 lg:px-40;
+} 
+
+.header_content {
+    @apply w-full lg:w-[44%] bg-brandBackground bg-opacity-70 flex flex-col gap-y-2 mt-40;
+}
+
+
+@media (min-width: 769px) and (max-width: 868px) { 
+    .header {
+        @apply px-4;
+    }
+}
