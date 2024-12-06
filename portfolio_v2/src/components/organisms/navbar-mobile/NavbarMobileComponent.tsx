@@ -28,12 +28,12 @@ const NavbarMobileComponent: React.FC<NavbarMobileComponentProps> = ({ navItems 
   }, [isMenuOpen]);
 
   return (
-    <header className="header" role="banner">
+    <header role="banner">
       <a className="logo" href='#'>
         <img src={logo} alt="Logo MewmewDev" className='w-8 h-8' />
         MewmewDev
       </a>
-      <nav ref={navRef} id="nav" className={`nav ${isMenuOpen ? 'nav--open' : ''}`} role="navigation">
+      <nav ref={navRef} id="nav" className={`nav absolute right-0 w-full z-50 ${isMenuOpen ? 'nav--open' : ''}`} role="navigation">
         <button
           onClick={handleMenuToggle}
           className="nav__toggle"
