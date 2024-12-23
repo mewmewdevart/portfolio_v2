@@ -2,6 +2,7 @@ import React from 'react';
 
 import HeaderHomeComponent from '@components/organisms/header-home/HeaderComponent';
 import imageBackground from '@assets/images/bgMe.png';
+import SectionAboutMeComponent from '@components/organisms/section-aboutMe/SectionAboutMeComponent';
 
 function HomePage() {
   return (
@@ -21,6 +22,8 @@ function HomePage() {
         textButton="Entrar em contato!"
         styleButton="w-fit"
       />
+
+      <SectionAboutMeComponent></SectionAboutMeComponent>
     </>
   );
 }
