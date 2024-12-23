@@ -11,7 +11,7 @@ const SocialsBarComponent: React.FC<SocialsBarComponentProps> = ({ socialsItem }
       <ul>
         {socialsItem.map((item, index) => (
           <li key={index} className={style.footer_content}>
-            <a href={item.link} className="text-white" aria-label={item.label}>
+            <a href={item.link} className="text-white" aria-label={item.label} target="_blank">
               <img src={item.pathImg} alt={item.label} className='w-8 h-8' />
             </a>
           </li>
