@@ -1,3 +1,3 @@
 .section {
-    @apply flex justify-between px-4 h-[580px] md:px-20 lg:px-40 bg-red-500;
+    @apply px-4 py-20 md:px-20 lg:px-40 ;
 }

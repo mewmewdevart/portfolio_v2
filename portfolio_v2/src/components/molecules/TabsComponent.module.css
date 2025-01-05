@@ -1,0 +1,50 @@
+.tabsContainer {
+  font-family: Arial, sans-serif ;
+  @apply py-4 bg-brandBackground;
+}
+
+.tabHeaders {
+  display: flex;
+  border-bottom: 2px solid #ccc;
+}
+
+.tabButton {
+  transition: all 0.3s ease;
+    @apply w-[200px] cursor-pointer overflow-hidden relative border-2 border-brandPrimary p-[6px] hover:bg-brandPrimary hover:text-brandBackground cursor-pointer bg-brandBackground;
+}
+
+.tabContent {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-top: none;
+  @apply flex gap-4;
+}
+
+
+.tabButton:hover {
+  text-decoration: none;
+  opacity: .7;
+}
+
+.active {
+@apply bg-brandPrimary text-brandBackground ;
+}
+
+.tabButton::before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  @apply bg-brandGrayLight;
+}
+
+.tabImage {
+  @apply w-[50px] h-[50px] p-2;
+}
+
+.tabItem {
+  @apply flex flex-col items-center text-center;
+}
