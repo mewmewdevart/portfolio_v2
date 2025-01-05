@@ -3,11 +3,12 @@ import logo from '../../../assets/images/icons/logo.svg';
 import './NavbarMobileComponent.css';
 
 interface NavbarMobileComponentProps {
-    navItems: { label: string, link: string }[];
-  }
+  navItems: { label: string; link: string }[];
+}
 
 const NavbarMobileComponent: React.FC<NavbarMobileComponentProps> = ({ navItems }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showCurriculo, setShowCurriculo] = useState(false); 
   const navRef = useRef<HTMLElement>(null);
 
   const handleMenuToggle = () => {
@@ -18,29 +19,44 @@ const NavbarMobileComponent: React.FC<NavbarMobileComponentProps> = ({ navItems 
     const body = document.body;
     if (isMenuOpen) {
       body.classList.add('no-scroll');
+      const timer = setTimeout(() => {
+        setShowCurriculo(true);
+      }, 1500);
+      return () => clearTimeout(timer);
     } else {
+      setShowCurriculo(false);
       const timer = setTimeout(() => {
         body.classList.remove('no-scroll');
       }, 500);
-
       return () => clearTimeout(timer);
     }
   }, [isMenuOpen]);
 
   return (
     <header role="banner">
-      <a className="logo" href='#'>
-        <img src={logo} alt="Logo MewmewDev" className='w-8 h-8' />
+      <a className="logo" href="#">
+        <img src={logo} alt="Logo MewmewDev" className="w-8 h-8" />
         MewmewDev
       </a>
-      <nav ref={navRef} id="nav" className={`nav absolute right-0 w-full z-50 ${isMenuOpen ? 'nav--open' : ''}`} role="navigation">
+      <nav
+        ref={navRef}
+        id="nav"
+        className={`nav absolute right-0 w-full z-50 ${isMenuOpen ? 'nav--open' : ''}`}
+        role="navigation"
+      >
         <button
           onClick={handleMenuToggle}
           className="nav__toggle"
           aria-expanded={isMenuOpen}
           aria-controls="menu"
         >
-          <svg className="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+          <svg
+            className="menuicon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 50 50"
+          >
             <title>Toggle Menu</title>
             <g>
               <line className="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5" />
@@ -51,15 +67,17 @@ const NavbarMobileComponent: React.FC<NavbarMobileComponentProps> = ({ navItems 
           </svg>
         </button>
         <ul className="nav__menu" id="menu" hidden={!isMenuOpen} aria-label="main navigation">
-        {navItems.map((item) => (
+          {navItems.map((item) => (
             <li key={item.label} className="nav__item">
               <a href={item.link} className="nav__link">
-              <span className="navbar__linkIcon">#</span>
+                <span className="navbar__linkIcon">#</span>
                 {item.label}
               </a>
             </li>
           ))}
-          <li className="nav__item navbar__custom">Currículo</li>
+          {showCurriculo && (
+            <li className="nav__item navbar__custom">Currículo</li>
+          )}
         </ul>
         <div className="splash"></div>
       </nav>
