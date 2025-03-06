@@ -1,54 +1,75 @@
-import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin, faBehance, faCodepen } from "@fortawesome/free-brands-svg-icons";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 
-import GithubIcon from "../assets/icons/icon_github.svg";
-import BehanceIcon from "../assets/icons/icon_behance.svg";
-import FiverrIcon from "../assets/icons/icon_fiverr.svg";
-
-interface SocialsBarComponentProps {
-  iconPath?: string;
-  iconLabel?: string;
-  iconLink?: string;
-}
-
-const SocialsBarComponent: React.FC<SocialsBarComponentProps> = ({}) => {
+const SocialsBarComponent = () => {
   return (
-    <>
-      <aside className="flex flex-col absolute items-center bottom-0">
-        <ul className="text-white w-fit mx-20 flex items-center flex-col gap-[10px] mb-2">
-          <li>
-            <a
-              href="https://github.com/mewmewdevart"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={GithubIcon} alt="GitHub" className="w-[32px]" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://linkedin.com/in/mewmewdevart"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={BehanceIcon} alt="LinkedIn" className="w-[32px]" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://fiverr.com/mewmewdevart"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={FiverrIcon} alt="Fiverr" className="w-[32px]" />
-            </a>
-          </li>
-        </ul>
-        <div
-          aria-hidden="true"
-          className="border-r border-gray h-[100px] mx-4 w-[5px]"
-        ></div>
-      </aside>
-    </>
+    <aside
+      className="fixed bottom-0 hidden xl:flex flex-col items-center "
+      aria-label="Redes sociais"
+    >
+      <ul className="text-gray w-fit mx-20 flex flex-col items-center gap-2">
+        <li className="hover:text-primary transition-colors duration-300">
+          <a
+            href="https://github.com/mewmewdevart"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            className="text-regular"
+          >
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+        </li>
+        <li className="hover:text-primary transition-colors duration-300">
+          <a
+            href="https://linkedin.com/in/mewmewdevart"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            className="text-regular"
+          >
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+        </li>
+        <li className="hover:text-primary transition-colors duration-300">
+          <a
+            href="https://fiverr.com/mewmewdevart"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Fiverr"
+            className="text-regular"
+          >
+            <FontAwesomeIcon icon={faLink} />
+          </a>
+        </li>
+        <li className="hover:text-primary transition-colors duration-300">
+          <a
+            href="https://www.behance.net/mewmewdevart"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Behance"
+            className="text-regular"
+          >
+            <FontAwesomeIcon icon={faBehance} />
+          </a>
+        </li>
+        <li className="hover:text-primary transition-colors duration-300">
+          <a
+            href="https://codepen.io/mewmewdevart"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="CodePen"
+            className="text-regular"
+          >
+            <FontAwesomeIcon icon={faCodepen} />
+          </a>
+        </li>
+      </ul>
+      <div
+        role="presentation"
+        className="border-r border-gray h-[100px] mx-4 w-[5px]"
+      ></div>
+    </aside>
   );
 };
 
