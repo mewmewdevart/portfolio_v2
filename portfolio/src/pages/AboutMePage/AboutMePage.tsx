@@ -1,61 +1,71 @@
-import ButtonComponent from "@atoms/ButtonComponent/ButtonComponent";
 import React from "react";
+import ButtonComponent from "@atoms/ButtonComponent/ButtonComponent";
 
 const AboutMePage: React.FC = () => {
-	return (
-		<div className="w-full h-[90%] bg-dark">
-			<section className="flex justify-center items-center w-full h-[90%] text-white">
-				<div className="flex flex-col w-[80%] mx-auto h-full py-20 gap-6">
-					<div className="flex flex-row items-center">
-						<h3 className="text-[18px] font-semibold">
-							{" "}
-							<span className="text-primary"># </span>Sobre Mim
-						</h3>
-						<div
-							aria-hidden="true"
-							className="border-b border-primary w-[40%] mx-4 "
-						></div>
-					</div>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta
-						enim orci, non cursus lacus laoreet vel. Aliquam in risus diam.
-						Donec pharetra blandit risus, in pharetra urna porta nec. Duis
-						iaculis ut sem a commodo. Donec feugiat, quam sit amet dapibus
-						tristique, quam nulla egestas eros, ut sagittis tortor leo quis
-						diam. Proin facilisis tempus pretium. Ut magna nulla, gravida eu
-						felis eu, consequat sollicitudin lectus. Mauris feugiat eros
-						suscipit metus placerat, id posuere velit accumsan. Aliquam sit amet
-						metus vehicula, mollis quam in, egestas arcu. Vestibulum semper
-						fringilla tortor ac malesuada. Pellentesque porttitor, velit eget
-						molestie finibus, ante dolor vulputate leo, id viverra dui dolor
-						eget tortor. Class aptent taciti sociosqu ad litora torquent per
-						conubia nostra, per inceptos himenaeos. <br /> <br /> Lorem ipsum
-						dolor sit amet, consectetur adipiscing elit. Sed porta enim orci,
-						non cursus lacus laoreet vel. Aliquam in risus diam. Donec pharetra
-						blandit risus, in pharetra urna porta nec. Duis iaculis ut sem a
-						commodo. Donec feugiat, quam sit amet dapibus tristique, quam nulla
-						egestas eros, ut sagittis tortor leo quis diam. Proin facilisis
-						tempus pretium. Ut magna nulla, gravida eu felis eu, consequat
-						sollicitudin lectus. Mauris feugiat eros suscipit metus placerat, id
-						posuere velit accumsan. Aliquam sit amet metus vehicula, mollis quam
-						in, egestas arcu. Vestibulum semper fringilla tortor ac malesuada.
-						Pellentesque porttitor, velit eget molestie finibus, ante dolor
-						vulputate leo, id viverra dui dolor eget tortor. Class aptent taciti
-						sociosqu ad litora torquent per conubia nostra, per inceptos
-						himenaeos.
-					</p>
-					<div className="flex  flex-row gap-4">
-					<ButtonComponent className="w-[200px] ">
-			  Contratar Serviços
-			</ButtonComponent>
-					<ButtonComponent className="w-[200px] ">
-			  Acessar o Linkedin
-			</ButtonComponent>
-					</div>
-				</div>
-			</section>
-		</div>
-	);
+  return (
+    <section className="w-full bg-dark" aria-labelledby="about-me-title">
+      <header className="flex justify-center items-center w-full text-white py-20">
+        <div className="flex flex-col w-[90%] sm:w-[80%] mx-auto h-full gap-6">
+          <div className="flex flex-row items-center">
+            <h3 id="about-me-title" className="text-regular font-semibold">
+              <span className="text-primary"># </span>Sobre Mim
+            </h3>
+            <div
+              aria-hidden="true"
+              className="border-b border-primary w-[40%] sm:w-[30%] mx-4"
+            ></div>
+          </div>
+          <article className="text-gray text-sm sm:text-base">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta
+              enim orci, non cursus lacus laoreet vel. Aliquam in risus diam.
+              Donec pharetra blandit risus, in pharetra urna porta nec. Duis
+              iaculis ut sem a commodo. Donec feugiat, quam sit amet dapibus
+              tristique, quam nulla egestas eros, ut sagittis tortor leo quis
+              diam. Proin facilisis tempus pretium. Ut magna nulla, gravida eu
+              felis eu, consequat sollicitudin lectus. Mauris feugiat eros
+              suscipit metus placerat, id posuere velit accumsan. Aliquam sit amet
+              metus vehicula, mollis quam in, egestas arcu. Vestibulum semper
+              fringilla tortor ac malesuada. Pellentesque porttitor, velit eget
+              molestie finibus, ante dolor vulputate leo, id viverra dui dolor
+              eget tortor. Class aptent taciti sociosqu ad litora torquent per
+              conubia nostra, per inceptos himenaeos.
+            </p>
+            <br /> <br />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta
+              enim orci, non cursus lacus laoreet vel. Aliquam in risus diam.
+              Donec pharetra blandit risus, in pharetra urna porta nec. Duis
+              iaculis ut sem a commodo. Donec feugiat, quam sit amet dapibus
+              tristique, quam nulla egestas eros, ut sagittis tortor leo quis
+              diam. Proin facilisis tempus pretium. Ut magna nulla, gravida eu
+              felis eu, consequat sollicitudin lectus. Mauris feugiat eros
+              suscipit metus placerat, id posuere velit accumsan. Aliquam sit amet
+              metus vehicula, mollis quam in, egestas arcu. Vestibulum semper
+              fringilla tortor ac malesuada. Pellentesque porttitor, velit eget
+              molestie finibus, ante dolor vulputate leo, id viverra dui dolor
+              eget tortor. Class aptent taciti sociosqu ad litora torquent per
+              conubia nostra, per inceptos himenaeos.
+            </p>
+          </article>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <ButtonComponent
+              className="w-full sm:w-[200px]"
+              aria-label="Contratar meus serviços"
+            >
+              Contratar Serviços
+            </ButtonComponent>
+            <ButtonComponent
+              className="w-full sm:w-[200px]"
+              aria-label="Visitar meu LinkedIn"
+            >
+              Acessar o Linkedin
+            </ButtonComponent>
+          </div>
+        </div>
+      </header>
+    </section>
+  );
 };
 
 export default AboutMePage;
