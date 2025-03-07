@@ -5,7 +5,7 @@ import './index.css';
 import ProjectsPage from '@pages/ProjectsPage/ProjectsPage';
 import AboutMePage from '@pages/AboutMePage/AboutMePage';
 import ExperiencePage from '@pages/ExperiencePage/ExperiencePage';
-import useScrollNavigation from './hooks/useScrollNavigation'; 
+// import useScrollNavigation from './hooks/useScrollNavigation'; 
 import { TranslationProvider } from './context/TranslationContext.tsx'
 import CursorGlow from '@atoms/CursorGlowComponent/CursorGlowComponent.tsx';
 import NavbarComponent from '@molecules/NavbarComponent/NavbarComponent.tsx';
