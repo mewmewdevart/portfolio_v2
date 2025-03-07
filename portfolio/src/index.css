@@ -4,11 +4,32 @@
 	--color-primary: #AA7EDF;
 	--color-dark: #282C34;
 	--color-white: #FFFFFF;
-	--color-gray: #ABB2BF;
+	--color-gray: #B6BCC8;
 
 	--font-display: "Poppins", "sans-serif";
+
+	--text-small: 1rem;
+	--text-regular: 1.6rem;
+	--text-medium: 1.8rem;
+	--text-large: 2.4rem;
 }
 
 * {
 	@apply font-display;
+}
+
+::selection {
+	@apply bg-primary text-white;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	@apply bg-white;
+}
+
+::-webkit-scrollbar-thumb {
+	@apply bg-primary;
 }
