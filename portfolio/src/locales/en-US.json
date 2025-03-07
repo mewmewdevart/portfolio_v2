@@ -1,9 +1,10 @@
 {
     "language": "en-US",
     "welcome": "Hi, I'm ",
-    "apresentation": "I am a software developer who creates (and occasionally designs) digital experiences. Currently, I am looking for full-time job opportunities while doing freelance web development, focusing on accessibility, SEO, and user experience.",
-    "home": "Home",
+    "introduction": "I develop things on the Web.",
+    "presentation": "I am a software developer who creates (and occasionally designs) digital experiences. Currently, I am looking for full-time job opportunities while doing freelance web development, focusing on accessibility, SEO, and user experience.",
     "about": "About",
+    "experience": "Experience",
     "projects": "Projects",
     "contact": "Contact"
   }
