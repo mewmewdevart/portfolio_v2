@@ -4,6 +4,7 @@ import "./globals.css";
 import NavbarComponent from "@/components/molecules/NavbarComponent";
 import { AccessibilityProvider } from "@/context/AccessibilityContext";
 import ClientLayout from "@/app/ClientLayout";
+import SocialsBarComponent from "@/components/atoms/SocialsBarComponent";
 
 const poppinsSans = Poppins({
   variable: "--font-poppins-sans",
@@ -28,6 +29,7 @@ export default function RootLayout({
           <ClientLayout>
             <NavbarComponent />
             {children}
+            <SocialsBarComponent/>
           </ClientLayout>
         </AccessibilityProvider>
       </body>

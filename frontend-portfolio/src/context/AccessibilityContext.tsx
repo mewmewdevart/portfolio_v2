@@ -9,7 +9,7 @@ type AccessibilityContextType = {
 
 const AccessibilityContext = createContext<AccessibilityContextType | undefined>(undefined);
 
-const textSizeLevels = ["1rem", "20px", "26px", "35px"];
+const textSizeLevels = ["1rem", "1.125rem", "1.25rem", "1.5rem"];
 
 export const AccessibilityProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [currentLevel, setCurrentLevel] = useState(0);

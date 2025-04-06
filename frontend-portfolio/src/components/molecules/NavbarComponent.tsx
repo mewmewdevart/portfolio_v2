@@ -5,7 +5,7 @@ import ToolBarAccessible from "./ToolBarAccessible";
 const NavbarComponent: React.FC = () => {
   return (
     <>
-      <header className="bg-red-500 flex justify-between w-full mx-auto items-center py-2 px-4 md:px-40">
+      <header className="bg-dark flex flex-col lg:flex-row justify-between w-full mx-auto items-center py-2 px-4 md:px-40">
         <div className="flex items-center text-primary gap-2 font-bold">
           <Image
             src="/logo.svg"
@@ -20,7 +20,7 @@ const NavbarComponent: React.FC = () => {
           <NavbarClient />
         </nav>
       </header>
-      <ToolBarAccessible />
+      {/* <ToolBarAccessible /> */}
     </>
   );
 };
