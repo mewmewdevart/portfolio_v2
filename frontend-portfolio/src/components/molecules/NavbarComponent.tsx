@@ -20,7 +20,7 @@ const NavbarComponent: React.FC = () => {
           <NavbarClient />
         </nav>
       </header>
-      {/* <ToolBarAccessible /> */}
+      <ToolBarAccessible />
     </>
   );
 };

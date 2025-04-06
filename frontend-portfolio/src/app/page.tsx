@@ -1,9 +1,9 @@
-import NavbarMobile from "@/components/molecules/NavbarMobile";
+import HomeTemplate from "@/components/templates/HomeTemplate/HomeTemplate";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen">
-
-    </div>
+    <>
+      <HomeTemplate />
+    </>
   );
 }
