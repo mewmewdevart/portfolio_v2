@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
+import NavbarComponent from "@/components/molecules/NavbarComponent";
+import { AccessibilityProvider } from "@/context/AccessibilityContext";
+import ClientLayout from "@/app/ClientLayout";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const poppinsSans = Poppins({
+  variable: "--font-poppins-sans",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -24,10 +23,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${poppinsSans.variable} antialiased`} style={{ "--text-size": "16px" } as React.CSSProperties}>
+        <AccessibilityProvider>
+          <ClientLayout>
+            <NavbarComponent />
+            {children}
+          </ClientLayout>
+        </AccessibilityProvider>
       </body>
     </html>
   );
