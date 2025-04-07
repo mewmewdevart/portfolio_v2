@@ -1,10 +1,11 @@
 {
     "language": "en-US",
     "welcome": "Hi, I'm ",
-    "introduction": "I develop things on the Web.",
-    "presentation": "I am a software developer who creates (and occasionally designs) digital experiences. Currently, I am looking for full-time job opportunities while doing freelance web development, focusing on accessibility, SEO, and user experience.",
+    "introduction": "I develop navigable digital experiences.",
+    "presentation": "I create accessible, high-performance interfaces with sharp SEO — all focused on the end user. Currently open to full-time opportunities while working on freelance projects.",
     "about": "About",
     "experience": "Experience",
     "projects": "Projects",
-    "contact": "Contact"
-  }
+    "contact": "Contact",
+    "btnCurriculum" : "Download Curriculum"
+}

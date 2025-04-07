@@ -38,6 +38,10 @@ const NavbarClient: React.FC = () => {
     }
   };
 
+  if (!texts) {
+    return null;
+  }
+
   const navItems: NavItem[] = [
     { id: "sobre", label: texts.about },
     { id: "experience", label: texts.experience },

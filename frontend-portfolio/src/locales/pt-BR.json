@@ -6,6 +6,9 @@
     "about": "Sobre",
     "experience": "Experiencia",
     "projects": "Projetos",
-    "contact": "Contato"
-
+    "contact": "Contato",
+    "seo": "SEO",
+    "accessibility": "Acessibilidade",
+    "userExperience": "Experiência do Usuário",
+    "btnCurriculum" : "Baixar Currículo"
 }

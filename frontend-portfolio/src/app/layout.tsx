@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import "./globals.css";
-import NavbarComponent from "@/components/molecules/NavbarComponent";
+
 import { AccessibilityProvider } from "@/context/AccessibilityContext";
+import { TranslationProvider } from "@/context/TranslationContext";
 import ClientLayout from "@/app/ClientLayout";
+
+import NavbarComponent from "@/components/molecules/NavbarComponent";
 import SocialsBarComponent from "@/components/atoms/SocialsBarComponent/SocialsBarComponent";
+import FooterComponent from "@/components/molecules/FooterComponent/FooterComponent";
+
+import "./globals.css";
 
 const poppinsSans = Poppins({
   variable: "--font-poppins-sans",
@@ -25,13 +30,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppinsSans.variable} antialiased`} style={{ "--text-size": "16px" } as React.CSSProperties}>
-        <AccessibilityProvider>
-          <ClientLayout>
-            <NavbarComponent />
-            {children}
-            <SocialsBarComponent/>
-          </ClientLayout>
-        </AccessibilityProvider>
+        <TranslationProvider> 
+          <AccessibilityProvider>
+            <ClientLayout>
+              <NavbarComponent />
+              {children}
+              <SocialsBarComponent />
+              <FooterComponent />
+            </ClientLayout>
+          </AccessibilityProvider>
+        </TranslationProvider>
       </body>
     </html>
   );

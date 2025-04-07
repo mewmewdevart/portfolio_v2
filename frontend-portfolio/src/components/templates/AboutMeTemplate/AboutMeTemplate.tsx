@@ -3,16 +3,15 @@ import ButtonComponent from "@atoms/ButtonComponent/ButtonComponent";
 
 const AboutMeTemplate: React.FC = () => {
   return (
-    <section className="w-full" aria-labelledby="about-me-title">
-      <header className="flex justify-center items-center w-full text-white py-4 lg:py-20">
-        <div className="flex flex-col w-[90%] sm:w-[80%] mx-auto h-full gap-6">
-          <div className="flex flex-row items-center">
+    <section className="w-full h-screen bg-dark " aria-labelledby="about-me-title">
+        <div className="flex flex-col w-full mx-auto h-full gap-6 flex justify-center w-full h-full mx-auto items-start py-2 px-4 md:px-40 " >
+          <div className="flex flex-row items-center w-full">
             <h3 id="about-me-title" className="text-regular font-semibold">
               <span className="text-primary"># </span>Sobre Mim
             </h3>
             <div
               aria-hidden="true"
-              className="border-b border-primary w-[2.5rem] sm:w-[1.875rem] mx-4"
+              className="border-b border-primary w-[5rem] sm:w-[20rem] mx-4"
             ></div>
           </div>
           <article className="text-gray text-sm sm:text-base">
@@ -63,7 +62,6 @@ const AboutMeTemplate: React.FC = () => {
             </ButtonComponent>
           </div>
         </div>
-      </header>
     </section>
   );
 };

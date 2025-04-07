@@ -32,9 +32,12 @@ interface TranslationProviderProps {
 }
 
 export const TranslationProvider = ({ children }: TranslationProviderProps) => {
-  const [language, setLanguage] = useState<Language>(
-    (typeof window !== "undefined" && localStorage.getItem("language") as Language) || "pt-BR"
-  );
+  const [language, setLanguage] = useState<Language>(() => {
+    if (typeof window !== "undefined") {
+      return (localStorage.getItem("language") as Language) || "pt-BR";
+    }
+    return "pt-BR";
+  });
   const [texts, setTexts] = useState<Translations>(translations[language]);
 
   useEffect(() => {
