@@ -10,7 +10,7 @@ const ClientLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => 
     document.body.style.setProperty("--text-size", textSize);
   }, [textSize]);
 
-  return <>{children}</>;
+  return <>{children}</>; 
 };
 
 export default ClientLayout;

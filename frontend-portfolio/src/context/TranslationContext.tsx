@@ -12,7 +12,7 @@ interface Translations {
 
 const translations: Record<Language, Translations> = {
   "pt-BR": ptBR,
-  "en-US": enUS,
+  "en-US": enUS
 };
 
 interface TranslationContextProps {
@@ -21,30 +21,26 @@ interface TranslationContextProps {
   setLanguage: (language: Language) => void;
 }
 
-export const TranslationContext = createContext<TranslationContextProps | undefined>({
-  texts: translations["pt-BR"],
-  language: "pt-BR",
-  setLanguage: () => {},
-});
+export const TranslationContext = createContext<TranslationContextProps | undefined>(undefined);
 
 interface TranslationProviderProps {
   children: ReactNode;
 }
 
 export const TranslationProvider = ({ children }: TranslationProviderProps) => {
-  const [language, setLanguage] = useState<Language>(() => {
-    if (typeof window !== "undefined") {
-      return (localStorage.getItem("language") as Language) || "pt-BR";
+  const [language, setLanguage] = useState<Language>("pt-BR");
+  const [texts, setTexts] = useState<Translations>(translations["pt-BR"]);
+
+  useEffect(() => {
+    const storedLanguage = localStorage.getItem("language") as Language;
+    if (storedLanguage && translations[storedLanguage]) {
+      setLanguage(storedLanguage);
     }
-    return "pt-BR";
-  });
-  const [texts, setTexts] = useState<Translations>(translations[language]);
+  }, []);
 
   useEffect(() => {
     setTexts(translations[language]);
-    if (typeof window !== "undefined") {
-      localStorage.setItem("language", language);
-    }
+    localStorage.setItem("language", language);
   }, [language]);
 
   return (

@@ -30,7 +30,7 @@ const circleFillStyle: React.CSSProperties = {
   transition: "background 0.3s ease",
 };
 
-const BackToTop: React.FC = () => {
+const BackToTopComponent: React.FC = () => {
   const [scrollProgress, setScrollProgress] = useState<number>(0);
   const [isVisible, setIsVisible] = useState<boolean>(false);
 
@@ -99,4 +99,4 @@ const BackToTop: React.FC = () => {
   );
 };
 
-export default BackToTop;
+export default BackToTopComponent;

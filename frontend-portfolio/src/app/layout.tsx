@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppinsSans.variable} antialiased`} style={{ "--text-size": "16px" } as React.CSSProperties}>
-        <TranslationProvider> 
+        <TranslationProvider>
           <AccessibilityProvider>
             <ClientLayout>
               <NavbarComponent />
