@@ -1,0 +1,23 @@
+{
+    "language": "pt-BR",
+    "welcome": "Oi, eu sou a",
+    "introduction": "Desenvolvo experiências digitais navegaveis.",
+    "presentation": "Crio interfaces acessíveis, performáticas e com SEO afiado — tudo com foco em quem vai usar. Atualmente aberta a oportunidades full-time, enquanto toco projetos como freelancer.",
+    "about": "Sobre",
+    "experience": "Experiencia",
+    "projects": "Projetos",
+    "contact": "Contato",
+    "seo": "SEO",
+    "accessibility": "Acessibilidade",
+    "userExperience": "Experiência do Usuário",
+    "btnCurriculum" : "Baixar Currículo",
+    "aboutMeTitle": "Sobre Mim",
+    "aboutMeParagraph1": "Olá! Sou Larissa Cristina Benedito, também conhecida como Mewmew — uma <strong>Software Developer</strong> apaixonada por <strong>Front-End</strong> e exploradora do universo <strong>Back-End</strong>. Tenho paixão por <strong>acessibilidade digital</strong>, projetos <strong>Open Source</strong> e iniciativas com <strong>propósito social</strong>. Acredito que a tecnologia deve ser feita <em>por</em> e <em>para</em> todas as pessoas.",
+    "aboutMeParagraph2": "Sou formada em <strong>Jogos Digitais</strong> pela Faculdade Impacta, com bolsa integral do Instituto IT Mídia e do Instituto da Oportunidade Social (TOTVS). Também sou aluna da <strong>42 São Paulo</strong> — uma das melhores escolas de Engenharia de Software do mundo.",
+    "aboutMeParagraph3": "No meu tempo livre, atuo como <strong>Web Designer</strong> e <strong>Ilustradora</strong>, conduzindo projetos de ponta a ponta: da prototipação ao desenvolvimento, testes e publicação. Tenho experiência colaborando com <strong>equipes multidisciplinares e internacionais</strong>, sempre adaptando soluções às realidades e culturas de cada projeto.",
+    "aboutMeParagraph4": "Na comunidade tech, sou <strong>Tutora voluntária</strong> no <em>PrograMona</em>, um programa de formação em Desenvolvimento Web promovido pelo PrograMaria em parceria com a <strong>Casa 1 🏳️‍🌈 </strong>. A iniciativa é voltada à inclusão de pessoas <span className='break-words'>LGBTQIAP+</span> e de grupos sub-representados na tecnologia. Também atuo como voluntária em eventos como <strong>CryptoRave</strong> (com foco em segurança digital), <strong>DevOpsDays SP</strong>, <strong>hackathons</strong> e <strong>game jams</strong> — onde mesclo criatividade, colaboração e inovação em ambientes diversos.",
+    "aboutMeParagraph5": "Defendo o <strong>software livre</strong>, o <strong>acesso à informação</strong> e o <strong>compartilhamento de conhecimento</strong> como pilares para uma tecnologia mais justa e inclusiva. Sigo em constante aprendizado, com a filosofia que me guia desde sempre: <em>“Sempre em desenvolvimento.”</em>",
+    "aboutMeParagraph6": "Se você busca uma desenvolvedora criativa, dedicada e com olhar atento aos detalhes, seja para um projeto pontual ou uma colaboração contínua, ficarei feliz em conversar! 💌",
+    "btnHireMe": "Contratar Serviços",
+    "btnLinkedIn": "Acessar o Linkedin"
+}

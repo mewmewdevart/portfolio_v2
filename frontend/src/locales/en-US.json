@@ -1,0 +1,20 @@
+{
+    "language": "en-US",
+    "welcome": "Hi, I'm ",
+    "introduction": "I develop navigable digital experiences.",
+    "presentation": "I create accessible, high-performance interfaces with sharp SEO — all focused on the end user. Currently open to full-time opportunities while working on freelance projects.",
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact",
+    "btnCurriculum" : "Download Curriculum",
+    "aboutMeTitle": "About Me",
+    "aboutMeParagraph1": "Hi! I'm Larissa Cristina Benedito, also known as Mewmew — a <strong>Software Developer</strong> passionate about <strong>Front-End</strong> and an explorer of the <strong>Back-End</strong> universe. I am passionate about <strong>digital accessibility</strong>, <strong>Open Source</strong> projects, and initiatives with a <strong>social purpose</strong>. I believe technology should be made <em>by</em> and <em>for</em> everyone.",
+    "aboutMeParagraph2": "I graduated in <strong>Digital Games</strong> from Faculdade Impacta, with a full scholarship from Instituto IT Mídia and Instituto da Oportunidade Social (TOTVS). I am also a student at <strong>42 São Paulo</strong> — one of the best Software Engineering schools in the world.",
+    "aboutMeParagraph3": "In my free time, I work as a <strong>Web Designer</strong> and <strong>Illustrator</strong>, leading projects from start to finish: from prototyping to development, testing, and publishing. I have experience collaborating with <strong>multidisciplinary and international teams</strong>, always adapting solutions to the realities and cultures of each project.",
+    "aboutMeParagraph4": "In the tech community, I am a <strong>Volunteer Tutor</strong> at <em>PrograMona</em>, a Web Development training program promoted by PrograMaria in partnership with <strong>Casa 1 🏳️‍🌈 </strong>. The initiative is aimed at including <span className='break-words'>LGBTQIAP+</span> people and underrepresented groups in technology. I also volunteer at events like <strong>CryptoRave</strong> (focused on digital security), <strong>DevOpsDays SP</strong>, <strong>hackathons</strong>, and <strong>game jams</strong> — where I mix creativity, collaboration, and innovation in diverse environments.",
+    "aboutMeParagraph5": "I advocate for <strong>free software</strong>, <strong>access to information</strong>, and <strong>knowledge sharing</strong> as pillars for fairer and more inclusive technology. I am constantly learning, guided by the philosophy that has always driven me: <em>“Always in development.”</em>",
+    "aboutMeParagraph6": "If you're looking for a creative, dedicated developer with an eye for detail, whether for a one-off project or ongoing collaboration, I'd be happy to chat! 💌",
+    "btnHireMe": "Hire Me",
+    "btnLinkedIn": "Visit LinkedIn"
+}
