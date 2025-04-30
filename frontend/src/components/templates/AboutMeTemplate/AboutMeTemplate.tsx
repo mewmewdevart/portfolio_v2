@@ -8,12 +8,12 @@ const AboutMeTemplate: React.FC = () => {
 
   return (
     <section
-      className="w-full min-h-screen bg-dark "
+      className="w-full bg-dark "
       aria-labelledby="about-me-title"
     >
       <div className="flex flex-col w-full mx-auto h-full gap-6 justify-center items-start py-2 px-4 lg:px-40 transition-all duration-200 ease-in-out">
         <div className="flex flex-row items-center w-full">
-          <h3 id="about-me-title" className="text-regular font-semibold">
+          <h3 id="about-me-title" className="text-2xl font-semibold ">
             <span className="text-primary"># </span>{texts.aboutMeTitle}
           </h3>
           <div

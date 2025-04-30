@@ -1,19 +1,22 @@
-import { work } from "../../../utils/work";
+import React from "react";
+import useWork from "../../../utils/work";
 import styles from "./WorkComponent.module.css";
 
-const WorkComponent = () => {
+const WorkComponent: React.FC = () => {
+  const work = useWork();
+
   return (
     <div className={styles.WorkComponent}>
       <div className={styles.func}>
         <div className={styles.work}>
-          {work.map(({ category, skills, icon }, index) => (
+          {work.map((category, index) => (
             <div key={index}>
               <h3 className="flex items-center gap-2">
-                {icon}
-                {category}
+                {category.icon}
+                {category.category}
               </h3>
               <ul>
-                {skills.map(
+                {category.skills.map(
                   ({ companyName, jobName, date, jobDescription }, idx) => (
                     <li key={idx} className={styles.timelineItem}>
                       <span>{jobName}</span>

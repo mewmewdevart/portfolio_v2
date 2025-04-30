@@ -22,10 +22,15 @@ export const AccessibilityProvider: React.FC<{ children: React.ReactNode }> = ({
   // Aplica o tamanho da fonte para todos os <p>
   useEffect(() => {
     const paragraphs = document.querySelectorAll("p");
+    const liLinks = document.querySelectorAll("li");
     paragraphs.forEach((p) => {
       p.style.fontSize = `${textSize}rem`;
     });
+    liLinks.forEach((li) => {
+      li.style.fontSize = `${textSize}rem`;
+    });
   }, [textSize]);
+  // Aplica o tamanho da fonte para todos os <li>
 
   // Atalhos de teclado: Ctrl + e Ctrl -
   useEffect(() => {

@@ -1,6 +1,5 @@
-"use client";
-
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { TranslationContext } from "../../../context/TranslationContext";
 
 export interface Tab {
   label: string;
@@ -13,6 +12,7 @@ interface TabsComponentProps {
 }
 
 const TabsComponent: React.FC<TabsComponentProps> = ({ tabs, defaultActiveIndex = 0 }) => {
+  const { texts } = useContext(TranslationContext)!;
   const [activeIndex, setActiveIndex] = useState(defaultActiveIndex);
 
   return (
@@ -21,7 +21,7 @@ const TabsComponent: React.FC<TabsComponentProps> = ({ tabs, defaultActiveIndex 
         {tabs.map((tab, index) => (
           <button
             key={index}
-            className={`px-4 py-2 text-sm text-[16px] transition-all duration-200 cursor-pointer ${
+            className={`px-4 py-2 text-lg font-semibold transition-all duration-200 cursor-pointer ${
               activeIndex === index
                 ? "border-b-2 border-primary text-primary"
                 : "text-gray hover:text-primary "

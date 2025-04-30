@@ -12,7 +12,8 @@ const App: React.FC = () => {
       <SocialsBarComponent />
       <HomeTemplate />
       <AboutMeTemplate />
-      <ExperienceTemplate />
+      
+      <ExperienceTemplate /> 
     </TranslationProvider>
   );
 };

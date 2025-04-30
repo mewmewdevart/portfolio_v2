@@ -55,10 +55,11 @@ const NavbarClient: React.FC = () => {
   ];
 
   return (
-    <ul className="flex justify-center gap-6 text-white">
+    <ul className="flex justify-center items-center gap-6 text-white">
       {navItems.map((item: NavItem) => (
-        <li key={item.id} className="text-small hover:text-primary">
-          <a href={`#${item.id}`}>
+        <li key={item.id} className="text-small hover:text-primary ">
+          <a href={`#${item.id}`} className="focus-visible:outline-none focus-visible:px-2 focus-visible:py-1
+          focus-visible:border-primary focus-visible:border-4 focus-visible:border-dashed">
             <span className="text-primary"># </span>
             {item.label}
           </a>
@@ -71,7 +72,8 @@ const NavbarClient: React.FC = () => {
           aria-haspopup="true"
           aria-expanded={isDropdownOpen}
           aria-label="Select language"
-          className="hover:underline cursor-pointer flex gap-2 items-center hover:text-primary"
+          className="hover:underline cursor-pointer flex gap-2 items-center hover:text-primary focus-visible:outline-none focus-visible:px-2 
+          focus-visible:border-primary focus-visible:border-4 focus-visible:border-dashed"
         >
           <FontAwesomeIcon icon={faLanguage} className="size-6 text-primary" />
           {texts.language}
@@ -91,7 +93,8 @@ const NavbarClient: React.FC = () => {
                 <button
                   onClick={() => setLanguage(lang.code)}
                   onKeyDown={(e) => handleKeyDown(e, lang.code)}
-                  className="block w-full text-left cursor-pointer hover:bg-primary p-2"
+                  className="block w-full text-left cursor-pointer hover:bg-primary p-2 focus-visible:outline-none focus-visible:px-2 focus-visible:py-1
+          focus-visible:border-primary focus-visible:border-4 focus-visible:border-dashed"
                 >
                   {lang.label}
                 </button>
