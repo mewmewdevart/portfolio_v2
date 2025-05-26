@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+
+
+/* --color-primary: #AA7EDF;
+--color-dark: #282C34;
+--color-neutral-100: #FFFFFF;
+--color-gray: #B6BCC8; */
+
+:root {
+  --background: #282C34;
+  --foreground: #FFFFFF;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-poppins: var(--font-poppins-sans);
+
+  --color-primary: #AA7EDF; /* tom lavanda */
+  --color-dark: #282C34;     /* grafite profundo */
+
+	--color-neutral-100: #FFFFFF;
+	--color-neutral-500: #B6BCC8;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Poppins", sans-serif;
+  @apply text-base font-poppins;
+  line-height: 1.5;
+  font-size: 1rem;
+  
+}
+
+::selection {
+	@apply bg-primary text-neutral-100;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	@apply bg-neutral-100;
+}
+
+::-webkit-scrollbar-thumb {
+	@apply bg-primary;
+}

@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+.resume {
+  box-shadow: 10px 10px #0e1442;
+  position: relative;
+  display: flex;
+}
+
+.func {
+  box-sizing: border-box;
+  float: left;
+  width: 100%;
+}
+
+.work {
+  width: 100%;
+
+  float: left;
+}
+
+.work h3 {
+  margin: 10px 0;
+  font-size: 1.25em;
+  color: #AA7EDF;
+}
+
+.work ul {
+  list-style-type: none;
+  padding: 0;
+}
+/* .work li {
+  cursor: pointer;
+} */
+
+.work small {
+  display: block;
+  opacity: 0.7;
+}
+
+.timelineItem {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 15px;
+  padding-left: 25px;
+  padding-bottom: 15px;
+}
+/* 
+.timelineItem:hover span {
+  color: #AA7EDF;
+} */
+
+.timelineItem:last-of-type {
+  padding-bottom: 3px;
+}
+
+.timelineItem::before,
+.timelineItem::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.timelineItem::before {
+  width: 7px;
+  height: 7px;
+  border: 3px solid #ffffff;
+  background:  #AA7EDF;
+  border-radius: 50%;
+  left: 3px;
+  z-index: 1;
+}
+
+.timelineItem::after {
+  width: 3px;
+  height: 100%;
+  background: #ffffff;
+  left: 5px;
+  top: 0;
+}
+
+.timelineItem:first-of-type::before {
+  width: 10px;
+  height: 10px;
+  left: 1px;
+}
+
+.timelineItem:hover::before {
+  animation: circle 1.2s infinite;
+}
+
+@keyframes circle {
+  from {
+    box-shadow: 0 0 0 0px #AA7EDF;
+  }
+  to {
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
+  }
+}
