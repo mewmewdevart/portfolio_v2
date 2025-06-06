@@ -1,5 +1,4 @@
-import React, { useState, useContext } from "react";
-import { TranslationContext } from "../../../context/TranslationContext";
+import React, { useState } from "react";
 
 export interface Tab {
   label: string;
@@ -12,12 +11,11 @@ interface TabsComponentProps {
 }
 
 const TabsComponent: React.FC<TabsComponentProps> = ({ tabs, defaultActiveIndex = 0 }) => {
-  const { texts } = useContext(TranslationContext)!;
   const [activeIndex, setActiveIndex] = useState(defaultActiveIndex);
 
   return (
     <div className="w-full mx-auto">
-      <div className="flex">
+      <div className="flex ">
         {tabs.map((tab, index) => (
           <button
             key={index}
@@ -33,7 +31,7 @@ const TabsComponent: React.FC<TabsComponentProps> = ({ tabs, defaultActiveIndex 
           </button>
         ))}
       </div>
-      <div className="p-4">
+      <div className="p-4 text-white ">
         {tabs[activeIndex]?.content}
       </div>
     </div>

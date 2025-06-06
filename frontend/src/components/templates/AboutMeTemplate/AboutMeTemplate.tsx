@@ -8,17 +8,18 @@ const AboutMeTemplate: React.FC = () => {
 
   return (
     <section
-      className="w-full bg-dark "
-      aria-labelledby="about-me-title"
+      className="w-full bg-dark mt-10"
+      aria-labelledby="projects-section-title"
+      id="about"
     >
-      <div className="flex flex-col w-full mx-auto h-full gap-6 justify-center items-start py-2 px-4 lg:px-40 transition-all duration-200 ease-in-out">
+      <div className="flex flex-col w-full mx-auto  gap-6 justify-center  px-4 lg:px-40 transition-all duration-200 ease-in-out ">
         <div className="flex flex-row items-center w-full">
-          <h3 id="about-me-title" className="text-2xl font-semibold ">
+          <h3 id="projects-section-title" className="text-2xl font-semibold">
             <span className="text-primary"># </span>{texts.aboutMeTitle}
           </h3>
           <div
             aria-hidden="true"
-            className="border-b border-primary w-[5rem] sm:w-[20rem] mx-4"
+            className="border-b border-primary w-[40%] mx-4"
           ></div>
         </div>
         <article className="text-gray text-sm sm:text-base">
@@ -29,17 +30,19 @@ const AboutMeTemplate: React.FC = () => {
             <p dangerouslySetInnerHTML={{ __html: texts.aboutMeParagraph4 }}></p>
             <p dangerouslySetInnerHTML={{ __html: texts.aboutMeParagraph5 }}></p>
             <p dangerouslySetInnerHTML={{ __html: texts.aboutMeParagraph6 }}></p>
+            <p dangerouslySetInnerHTML={{ __html: texts.aboutMeParagraph7 }}></p>
+            <p dangerouslySetInnerHTML={{ __html: texts.aboutMeParagraph8 }}></p>
           </div>
         </article>
         <div className="flex flex-col sm:flex-row gap-4">
-          <ButtonComponent
+          {/* <ButtonComponent
             className="w-full sm:w-[12.5rem] focus-visible:outline-none focus-visible:px-2 focus-visible:py-1
           focus-visible:border-primary focus-visible:border-4 focus-visible:border-dashed"
             aria-label={texts.btnHireMe}
             onClick={() => window.open("#", "_blank")}
           >
             {texts.btnHireMe}
-          </ButtonComponent>
+          </ButtonComponent> */}
           <ButtonComponent
             className="w-full sm:w-[12.5rem] focus-visible:outline-none focus-visible:px-2 focus-visible:py-1
           focus-visible:border-primary focus-visible:border-4 focus-visible:border-dashed"

@@ -25,8 +25,9 @@ const ExperienceTemplate: React.FC = () => {
 
   return (
     <section
-      className="w-full min-h-screen bg-dark px-4 lg:px-40 transition-all duration-200 ease-in-out mt-10"
+      className="w-full bg-dark px-4 lg:px-40 transition-all duration-200 ease-in-out mt-10"
       aria-labelledby="experience-title"
+      id="experience"
     >
       <header className="flex justify-center items-center w-full text-white ">
         <div className="flex flex-col w-full mx-auto h-full gap-6">

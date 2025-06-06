@@ -49,3 +49,7 @@ body {
 ::-webkit-scrollbar-thumb {
 	@apply bg-primary;
 }
+
+section {
+  scroll-margin-top: 100px;
+}

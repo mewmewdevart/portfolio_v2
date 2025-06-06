@@ -1,6 +1,6 @@
 import { useState, useContext, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown, faGlobe, faLanguage } from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown, faLanguage } from "@fortawesome/free-solid-svg-icons";
 import { TranslationContext } from "../../context/TranslationContext";
 
 interface NavItem {
@@ -37,16 +37,16 @@ const NavbarClient: React.FC = () => {
 
   if (!context || !context.texts) {
     console.error("TranslationContext is undefined or texts are missing. Ensure TranslationProvider wraps the component tree.");
-    return null; // Render nothing if context is undefined
+    return null;
   }
 
   const { texts, setLanguage } = context;
 
   const navItems: NavItem[] = [
-    { id: "sobre", label: texts.about },
+    { id: "about", label: texts.about },
     { id: "experience", label: texts.experience },
-    { id: "projetos", label: texts.projects },
-    { id: "contato", label: texts.contact },
+    { id: "projects", label: texts.projects },
+    { id: "contact", label: texts.contact },
   ];
 
   const languages = [
